@@ -17,7 +17,7 @@ Ce projet consiste à créer un prototype d'un logiciel tout en respectant les b
 - Utilisez vos identifiants pour accéder au profil de publication.
 
 5. Création de la pipeline CI/CD sur GitHub Actions
-- Créez un fichier de configuration (par exemple `.github/workflows/ci-cd.yml`) dans votre dépôt.
+- Créez un fichier de configuration (par exemple `.github/workflows/main_devopscdci.yml`) dans votre dépôt.
 - Configurez les jobs et les étapes de la pipeline pour le build, les tests et le déploiement de l'application.
 
 6. Tests de la pipeline
