@@ -43,9 +43,32 @@ jobs:
             release.zip
             !venv/
 
-  deploy:
+  test:
     runs-on: ubuntu-latest
     needs: build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python version
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.12'
+
+      - name: Create and start virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test
+        run: python -n pytest -v
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
