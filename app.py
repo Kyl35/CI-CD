@@ -15,5 +15,9 @@ def info():
   user_agent = request.headers.get('User-Agent')
   return f"Your user agent is: {user_agent}"
 
+@app.route("/cutecat")
+def cutecat():
+    return "https://i.pinimg.com/736x/15/4b/18/154b186e10acf78d53ddfa418aa08776.jpg"
+
 if __name__ == "__main__":
   app.run(debug=True)
