@@ -64,7 +64,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run test
-        run: python -n pytest -v
+        run: python -m pytest -v
 
   deploy:
     runs-on: ubuntu-latest
