@@ -1,4 +1,4 @@
-Ce projet consiste à créer un prototype d'un logiciel tout en respectant les bonnes pratiques du devops. Le code nous est déjà fourni, nous l'avons donc intégré dans le projet.
+Ce projet consiste à créer un prototype d'un logiciel tout en respectant les bonnes pratiques du devops. Le code nous est déjà fourni, nous l'avons donc intégré dans le projet. Cela permet de visualiser le fonctionnement du CI CD. Chaque nouvelle modification, actualise la pipeline.
 
 1. Création du dépôt sur GitHub
 - Créez un nouveau dépôt sur GitHub.
